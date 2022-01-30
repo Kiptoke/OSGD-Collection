@@ -12,14 +12,17 @@ def main():
         print("JSON Error: Failed to decode json file")
         sys.exit(1)
 
-    for repo in osgd["list"]:
-        repo_split = repo.split("/")
-        user = repo_split[0]
-        project = repo_split[1]
-    
-        with open(f'repos/{project.lower()}.json', 'w') as file:
-            r = requests.get(f'https://api.github.com/repos/{repo}', auth=('kiptoke',auth.get('github')))
-            file.write(json.dumps(r.json(), indent=4))
+    for cat in osgd["list"]:
+        for repo in osgd["list"][cat]:
+            repo_split = repo.split("/")
+            user = repo_split[0].replace(" ", "")
+            project = repo_split[1].replace(" ", "")
+        
+            print(f"Fetching {user}/{project}")
+            
+            with open(f'repos/{project.lower()}.json', 'w') as file:
+                r = requests.get(f'https://api.github.com/repos/{user}/{project}', auth=('kiptoke',auth.get('github')))
+                file.write(json.dumps(r.json(), indent=4))
   
 if __name__ == "__main__":
     main()

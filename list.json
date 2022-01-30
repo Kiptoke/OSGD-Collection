@@ -1,10 +1,40 @@
 {
     "list":
-    [
-        "aseprite/aseprite", 
-        "Kiptoke/DangerDuck",
-        "Dn-Programming-Core-Management/Dn-FamiTracker",
-        "godotengine/godot",
-        "OpenTTD/OpenTTD"
-    ]
+    {
+        "engines":
+        [
+            "godotengine/godot",
+            "photonstorm / phaser",
+            "kitao / pyxel",
+            "playcanvas/engine",
+            "bevyengine/bevy"
+        ],
+        "code":
+        [
+            "raysan5/raylib"
+        ],
+        "art":
+        [
+           "aseprite/aseprite",
+           "bkaradzic / bgfx",
+           "Orama-Interactive/Pixelorama"
+        ],
+        "audio":
+        [
+            "Dn-Programming-Core-Management/Dn-FamiTracker"
+        ],
+        "design":
+        [
+            "mapeditor/tiled"
+        ],
+        "games":
+        [
+            "OpenTTD/OpenTTD",
+            "OpenRCT2/OpenRCT2",
+            "SFTtech/openage",
+            "Anuken/Mindustry",
+            "OpenRA/OpenRA",
+            "ppy/osu"
+        ]
+    }
 }

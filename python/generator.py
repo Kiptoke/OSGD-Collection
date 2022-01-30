@@ -26,7 +26,7 @@ def main(verbose):
             osgd.append(repo)
             json_file.close()
             if verbose:
-                print(f"-- File {file}.json loaded")
+                print(f"-- File {file} loaded")
         except FileNotFoundError:
             print(f"FileNotFoundError: {file} not found")
             sys.exit(1)
