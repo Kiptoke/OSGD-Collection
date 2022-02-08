@@ -22,7 +22,9 @@ def main():
             
             with open(f'repos/{project.lower()}.json', 'w') as file:
                 r = requests.get(f'https://api.github.com/repos/{user}/{project}', auth=('kiptoke',auth.get('github')))
-                file.write(json.dumps(r.json(), indent=4))
+                category = r.json()
+                category.update({"category":cat}) 
+                file.write(json.dumps(category, indent=4))
   
 if __name__ == "__main__":
     main()

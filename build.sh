@@ -1,3 +1,4 @@
 #!/bin/bash
 
-python python/generator.py
+python python/repo.py
+python python/generator.py -v

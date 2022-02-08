@@ -1,7 +1,36 @@
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 5px;
+body{
+    margin: 2rem 4rem;
+}
 
-    margin: 10vh 10vw;
+/* ========== List Page CSS ========== */
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+}
+
+.card{
+    width: 16rem; 
+    height: 16rem;
+    transition: all 0.5s;
+}
+
+.card-body{
+    overflow: hidden;
+}
+.card-text{
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.card-link{
+    text-decoration: none;
+    color: inherit;
+}
+
+.stats{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
 }

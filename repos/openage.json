@@ -65,7 +65,7 @@
     "releases_url": "https://api.github.com/repos/SFTtech/openage/releases{/id}",
     "deployments_url": "https://api.github.com/repos/SFTtech/openage/deployments",
     "created_at": "2013-11-03T22:35:23Z",
-    "updated_at": "2022-01-30T21:42:49Z",
+    "updated_at": "2022-02-07T18:47:45Z",
     "pushed_at": "2022-01-26T14:44:15Z",
     "git_url": "git://github.com/SFTtech/openage.git",
     "ssh_url": "git@github.com:SFTtech/openage.git",
@@ -73,19 +73,19 @@
     "svn_url": "https://github.com/SFTtech/openage",
     "homepage": "http://openage.dev",
     "size": 12010,
-    "stargazers_count": 10801,
-    "watchers_count": 10801,
+    "stargazers_count": 10814,
+    "watchers_count": 10814,
     "language": "Python",
     "has_issues": true,
     "has_projects": true,
     "has_downloads": true,
     "has_wiki": true,
     "has_pages": false,
-    "forks_count": 1051,
+    "forks_count": 1052,
     "mirror_url": null,
     "archived": false,
     "disabled": false,
-    "open_issues_count": 243,
+    "open_issues_count": 244,
     "license": {
         "key": "other",
         "name": "Other",
@@ -118,9 +118,9 @@
         "rts-engine"
     ],
     "visibility": "public",
-    "forks": 1051,
-    "open_issues": 243,
-    "watchers": 10801,
+    "forks": 1052,
+    "open_issues": 244,
+    "watchers": 10814,
     "default_branch": "master",
     "permissions": {
         "admin": false,
@@ -150,6 +150,7 @@
         "type": "Organization",
         "site_admin": false
     },
-    "network_count": 1051,
-    "subscribers_count": 421
+    "network_count": 1052,
+    "subscribers_count": 421,
+    "category": "games"
 }
