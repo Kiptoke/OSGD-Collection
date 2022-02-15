@@ -11,26 +11,55 @@
 
         <title>The OSGD Collection</title>
     </head>
-
+    
     <body>
-        <p>The <b>Open Source Game Development (OSGD) Collection</b> is a curated list of freely available open-source game development resources that anyone can access. The purpose of the list is to serve as a central repository of open-source game development projects for anyone to discover, use, or contribute to.</p>
-        <div class="list">
-            {% for repo in osgd %}
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title"><a href="{{repo.html_url}}" target="_blank" class="card-link">{{repo.name}}</a></h5>
-                    <h6 class="card-subtitle mb-2 text-muted"><a href="{{repo.owner.html_url}}" target="_blank" class="card-link">{{repo.owner.login}}</a></h6>
-                    <p class="card-text">{{repo.description}}</p>
-                </div>
-                <div class="card-footer">
-                    <div class="stats">
-                        <div>&#11088; {{repo.stargazers_count}}</div>
-                        <div>&#128681; {{repo.open_issues_count}}</div>
-                        <span class="badge rounded-pill bg-primary">{{repo.language}}</span>
+        <header>
+            <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">The OSGD</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                      <div class="navbar-nav">
+                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="#">The List</a>
+                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="#">Contribute</a>
+                      </div>
                     </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="content">
+            <p id="description">The <b>Open Source Game Development (OSGD) Collection</b> is a curated list of freely available open-source game development resources that anyone can access. The purpose of the list is to serve as a central repository of open-source game development projects for anyone to discover, use, or contribute to.</p>
+            {% for cat in osgd %}
+            <div class="section">
+                <p class="category"><b>{{cat}}</b></p>
+                <div class="list">
+                    {% for repo in osgd[cat] %}
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="{{repo.html_url}}" target="_blank" class="card-link">{{repo.name}}</a></h5>
+                            <h6 class="card-subtitle mb-2 text-muted"><a href="{{repo.owner.html_url}}" target="_blank" class="card-link">{{repo.owner.login}}</a></h6>
+                            <p class="card-text">{{repo.description}}</p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="stats">
+                                <div>&#11088; {{repo.stargazers_count}}</div>
+                                <div>&#128681; {{repo.open_issues_count}}</div>
+                                <span class="badge rounded-pill bg-primary">{{repo.language}}</span>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
                 </div>
             </div>
             {% endfor %}
         </div>
+        <footer>
+            <i>The OSGD Collection is curated by Andrew Zhou (<a href="https://twitter.com/KiptokeDev" target="_blank">@KiptokeDev</a>).</i>
+        </footer>
     </body>
 </html>

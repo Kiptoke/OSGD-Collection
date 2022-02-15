@@ -1,14 +1,41 @@
 body{
-    margin: 2rem 4rem;
+ background-color: #f7f7f7;
+}
+
+.content{
+    margin: 2rem 5rem;
+}
+
+footer{
+    text-align: center;
+    color: gray;
+    margin-bottom: 1rem;
 }
 
 /* ========== List Page CSS ========== */
+
+#description{
+    font-size: 1.5em;
+    padding: 1rem 2rem;
+}
+
+.section{
+    border: 1px solid rgba(128, 128, 128, 0.5);
+    border-radius: 5px;
+    margin: 1rem 0;
+}
+
+.category{
+    font-size: 2em;
+    margin: 1rem 1rem;
+}
 
 .list {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
 
+    margin: 1rem 1rem;
 }
 
 .card{

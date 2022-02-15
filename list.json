@@ -1,7 +1,7 @@
 {
     "list":
     {
-        "engines":
+        "Engines":
         [
             "godotengine/godot",
             "photonstorm / phaser",
@@ -9,32 +9,34 @@
             "playcanvas/engine",
             "bevyengine/bevy"
         ],
-        "code":
+        "Code":
         [
-            "raysan5/raylib"
+            "raysan5/raylib",
+            "LWJGL/lwjgl3"
         ],
-        "art":
+        "Art":
         [
            "aseprite/aseprite",
            "bkaradzic / bgfx",
            "Orama-Interactive/Pixelorama"
         ],
-        "audio":
+        "Audio":
         [
             "Dn-Programming-Core-Management/Dn-FamiTracker"
         ],
-        "design":
+        "Design":
         [
             "mapeditor/tiled"
         ],
-        "games":
+        "Games":
         [
             "OpenTTD/OpenTTD",
             "OpenRCT2/OpenRCT2",
             "SFTtech/openage",
             "Anuken/Mindustry",
             "OpenRA/OpenRA",
-            "ppy/osu"
+            "ppy/osu",
+            "unitystation/unitystation"
         ]
     }
 }
