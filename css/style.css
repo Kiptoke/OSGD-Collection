@@ -61,3 +61,21 @@ footer{
     justify-content: space-around;
     align-items: flex-end;
 }
+
+/* ========== About + Contribute Page CSS ========== */
+
+.title{
+    font-size: 5em;
+    font-weight: bold;
+}
+
+.subtitle{
+    font-size: 2em;
+    font-style: italic;
+}
+
+.content-text
+{
+    font-size: 1.2em;
+    margin: 0 1vw;
+}
