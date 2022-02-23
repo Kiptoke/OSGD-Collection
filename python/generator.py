@@ -95,7 +95,7 @@ def build(osgd, verbose, final):
             sys.exit(1)
 
     # Open output file
-    with open(f'public/list.html', 'w', encoding="utf-8") as html:
+    with open(f'index.html', 'w', encoding="utf-8") as html:
         if verbose:
             print(f"- Loaded list.html")
     
