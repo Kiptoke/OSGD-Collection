@@ -7,26 +7,38 @@
             "photonstorm / phaser",
             "kitao / pyxel",
             "playcanvas/engine",
-            "bevyengine/bevy"
+            "bevyengine/bevy",
+            "pixijs/pixijs",
+            "renpy/renpy",
+            "love2d/love",
+            "pygame/pygame",
+            "OpenRA/OpenRA",
+            "o3de/o3de"
         ],
         "Code":
         [
             "raysan5/raylib",
-            "LWJGL/lwjgl3"
+            "bkaradzic / bgfx",
+            "LWJGL/lwjgl3",
+            "mgerhardy/simpleai"
         ],
         "Art":
         [
            "aseprite/aseprite",
-           "bkaradzic / bgfx",
-           "Orama-Interactive/Pixelorama"
+           "Orama-Interactive/Pixelorama",
+           "blender/blender",
+           "piskelapp/piskel"
         ],
         "Audio":
         [
-            "Dn-Programming-Core-Management/Dn-FamiTracker"
+            "Dn-Programming-Core-Management/Dn-FamiTracker",
+            "audacity/audacity",
+            "LMMS/lmms"
         ],
         "Design":
         [
-            "mapeditor/tiled"
+            "mapeditor/tiled",
+            "Ogmo-Editor-3/OgmoEditor3-CE"
         ],
         "Games":
         [
@@ -34,9 +46,9 @@
             "OpenRCT2/OpenRCT2",
             "SFTtech/openage",
             "Anuken/Mindustry",
-            "OpenRA/OpenRA",
             "ppy/osu",
-            "unitystation/unitystation"
+            "unitystation/unitystation",
+            "Warzone2100/warzone2100"
         ]
     }
 }
