@@ -2,7 +2,7 @@ import requests
 import os
 from datetime import datetime
 
-request = requests.get(f'https://api.github.com/rate_limit', auth=(auth.get('user'),os.getenv('token'))).json()['resources']['core']
+request = requests.get(f'https://api.github.com/rate_limit', auth=('Kiptoke',os.getenv('token'))).json()['resources']['core']
 
 used = request['used']
 limit = request['limit']
