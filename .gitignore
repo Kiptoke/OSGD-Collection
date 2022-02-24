@@ -1,6 +1,5 @@
 # Specific Files
 variables.py
-rate_limit.py
 full_repos.json
 
 # Byte-compiled / optimized / DLL files
