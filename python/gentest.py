@@ -6,7 +6,6 @@ import jinja2
 import click
 import requests
 import os
-from variables import auth
 
 # Main Project Code
 
