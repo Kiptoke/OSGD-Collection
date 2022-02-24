@@ -25,11 +25,18 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install jinja2 click requests
-    - name: Build Site
+        pip install jinja2 click requests datetime
+    - name: Update site with GitHub data
       run: python python/gentest.py -vf -u True
       env: 
         token: ${{ secrets.AUTH }}
-      
-        
-
+    - name: Rate limit check
+      run: python python/rate_limit.py
+      env:
+        token: ${{ secrets.AUTH }}
+    - name: Commit updated site build
+      run: |
+        git config --global user.name 'Kiptoke'
+        git config --global user.email 'Kiptoke@users.noreply.github.com'
+        git commit -am "Automated site build"
+        git push
