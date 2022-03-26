@@ -13,21 +13,26 @@
             "love2d/love",
             "pygame/pygame",
             "OpenRA/OpenRA",
-            "o3de/o3de"
+            "o3de/o3de",
+            "BabylonJS/Babylon.js"
         ],
         "Code":
         [
             "raysan5/raylib",
             "bkaradzic / bgfx",
             "LWJGL/lwjgl3",
-            "mgerhardy/simpleai"
+            "mgerhardy/simpleai",
+            "colyseus/colyseus",
+            "bulletphysics/bullet3",
+            "emilk/egui"
         ],
         "Art":
         [
            "aseprite/aseprite",
            "Orama-Interactive/Pixelorama",
            "blender/blender",
-           "piskelapp/piskel"
+           "piskelapp/piskel",
+           "KDE/krita"
         ],
         "Audio":
         [
@@ -48,7 +53,8 @@
             "Anuken/Mindustry",
             "ppy/osu",
             "unitystation/unitystation",
-            "Warzone2100/warzone2100"
+            "Warzone2100/warzone2100",
+            "diasurgical/devilution"
         ]
     }
 }
