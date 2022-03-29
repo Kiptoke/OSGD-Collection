@@ -14,7 +14,8 @@
             "pygame/pygame",
             "OpenRA/OpenRA",
             "o3de/o3de",
-            "BabylonJS/Babylon.js"
+            "BabylonJS/Babylon.js",
+            "AbyssEngine/AbyssEngine"
         ],
         "Code":
         [
@@ -24,26 +25,42 @@
             "mgerhardy/simpleai",
             "colyseus/colyseus",
             "bulletphysics/bullet3",
-            "emilk/egui"
+            "emilk/egui",
+            "liballeg/allegro5",
+            "le-doux/bitsy",
+            "boardgameio/boardgame.io",
+            "erincatto/box2d",
+            "inkle/ink",
+            "heroiclabs/nakama"
         ],
         "Art":
         [
            "aseprite/aseprite",
+           "LibreSprite/LibreSprite",
            "Orama-Interactive/Pixelorama",
            "blender/blender",
            "piskelapp/piskel",
-           "KDE/krita"
+           "KDE/krita",
+           "morganholly/tilesplit",
+           "cloudhead/rx",
+           "guillaumechereau/goxel"
         ],
         "Audio":
         [
             "Dn-Programming-Core-Management/Dn-FamiTracker",
             "audacity/audacity",
-            "LMMS/lmms"
+            "LMMS/lmms",
+            "ttencate/jfxr",
+            "milkytracker/MilkyTracker"
         ],
         "Design":
         [
             "mapeditor/tiled",
-            "Ogmo-Editor-3/OgmoEditor3-CE"
+            "Ogmo-Editor-3/OgmoEditor3-CE",
+            "deepnight/ldtk",
+            "UnderwaterApps/overlap2d",
+            "RPTools/maptool"
+            
         ],
         "Games":
         [
@@ -54,7 +71,9 @@
             "ppy/osu",
             "unitystation/unitystation",
             "Warzone2100/warzone2100",
-            "diasurgical/devilution"
+            "diasurgical/devilution",
+            "lichess-org/lila",
+            "olistic/warriorjs"
         ]
     }
 }
