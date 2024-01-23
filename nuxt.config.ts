@@ -1,5 +1,8 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+    meta: {
+        title: 'Open Source Game Dev',
+    },
     modules: [
         '@inkline/plugin/nuxt',
         '@nuxtjs/supabase',
