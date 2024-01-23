@@ -1,7 +1,3 @@
-<script>
-
-</script>
-
 <template>
 	<INavbar color="dark">
         <INavbarBrand to="/"> <h4>The OSGD</h4> </INavbarBrand>
