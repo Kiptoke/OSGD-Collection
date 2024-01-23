@@ -34,7 +34,7 @@
 
         // Error handling
         //console.debug(`------ ${props.repo.name}, ${props.repo.owner} ------`)
-        if (error.value !== null) {
+        if (error.value != null) {
             console.error(error.value)
         } else if (data.value == null) {
             repo = gitRepo
@@ -48,7 +48,7 @@
 
         // Error handling
         //console.debug(`------ ${props.repo.name}, ${props.repo.owner} ------`)
-        if (error.value !== null) {
+        if (error.value != null) {
             console.error(error.value)
         } else if (data.value == null) {
             console.error(`${props.repo.name} unable to be loaded from GitHub`)
