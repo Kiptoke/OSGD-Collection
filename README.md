@@ -30,3 +30,75 @@ Additionally, make sure that the project meets the OSGD requirements:
 ### Changes to the Website
 
 Want to suggest a cool new feature or even help me develop the OSGD site? Feel free to take a look at the [issues page](https://github.com/Kiptoke/OSGD-Collection/issues). There, you can either take on a proposed change to the website under the ENHANCEMENTS tag, or propose a change of your own! If you need an idea of how you can help improve the site, please take a look at the *What's Next* section in the [about page](https://opensourcegamedev.com/public/about.html).
+
+## Setup
+
+Make sure to install the dependencies:
+
+```bash
+# npm
+npm install
+
+# pnpm
+pnpm install
+
+# yarn
+yarn install
+
+# bun
+bun install
+```
+
+## Development Server
+
+Start the development server on `http://localhost:3000`:
+
+```bash
+# npm
+npm run dev
+
+# pnpm
+pnpm run dev
+
+# yarn
+yarn dev
+
+# bun
+bun run dev
+```
+
+## Production
+
+Build the application for production:
+
+```bash
+# npm
+npm run build
+
+# pnpm
+pnpm run build
+
+# yarn
+yarn build
+
+# bun
+bun run build
+```
+
+Locally preview production build:
+
+```bash
+# npm
+npm run preview
+
+# pnpm
+pnpm run preview
+
+# yarn
+yarn preview
+
+# bun
+bun run preview
+```
+
+Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
