@@ -36,9 +36,9 @@
         //console.debug(`------ ${props.repo.name}, ${props.repo.owner} ------`)
         if (error.value !== null) {
             console.error(error.value)
-        } else if (data.value === undefined) {
+        } else if (data.value == null) {
             repo = gitRepo
-        } else if (data.value !== undefined) {
+        } else if (data.value != null) {
             //console.log(`${props.repo.name} loaded from GitHub`)
             repo = repositoryFormat(data.value)
             databaseUpdate(repo, false)
@@ -50,9 +50,9 @@
         //console.debug(`------ ${props.repo.name}, ${props.repo.owner} ------`)
         if (error.value !== null) {
             console.error(error.value)
-        } else if (data.value === undefined) {
+        } else if (data.value == null) {
             console.error(`${props.repo.name} unable to be loaded from GitHub`)
-        } else if (data.value !== undefined) {
+        } else if (data.value != null) {
             //console.log(`${props.repo.name} loaded from GitHub for first time, pushing to database`)
             repo = repositoryFormat(data.value)
             databaseUpdate(repo, true)
